@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+body {
+  line-height: 150%;
+}
+a {
+  color: white;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+
+  background: url("https://images.unsplash.com/flagged/photo-1574005280900-3ff489fa1f70?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    scroll 200px -50px;
+
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2px 12%;
+}
+
+.poster {
+  /* object-fit: fill;
+  object-position: left; */
+}
+
+nav .brandLogo p {
+  color: red;
+  font-size: 24px;
+}
+nav .brandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.brandLogo,
+.navLink {
+  cursor: pointer;
+}
+.navLink {
+  display: flex;
+  gap: 3%;
+  justify-content: flex-start;
+}
+
+.navLink li a {
+  font-size: 18px;
+}
+
+.navLink li a:hover {
+  border-bottom: 3px solid orangered;
+}
+nav button a {
+  font-weight: 700;
+}
+
+.headingContent h1 {
+  font-weight: bold;
+  font-size: 130px;
+  font-weight: bold;
+  line-height: 90%;
+}
+
+.headingContent h2 {
+  margin-top: 3%;
+  font-weight: 500;
+  width: 75%;
+  font-size: 25px;
+}
+.headingContent span {
+  color: red;
+}
+.headingContent {
+  width: 80%;
+  padding: 3% 12%;
+  color: white;
+}
+
+.icons .bx {
+  color: white;
+  font-weight: bold;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 5% 12%;
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #222222;
+}
+
+.hero > * {
+  flex: 1 1 50%;
+}
+
+.titleProduct {
+  /* background-color: red;s */
+  width: 30%;
+  padding: 50px 25px;
+}
+.titleProduct h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 150%;
+  letter-spacing: 5px;
+}
+.titleProduct p {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.titleProduct a {
+  padding: 5px 20px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.product {
+  width: 40%;
+}
+
+.title span {
+  font-weight: bold;
+}
+.product .title {
+  color: white;
+  font-weight: 400;
+  text-align: left;
+  /* border: 1px solid red; */
+}
+.product > .price {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+.card {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5px;
+}
+.card img {
+  width: 100%;
+  /* 1923x1083 */
+}
+
+footer {
+  padding: 10px 10%;
+  background-color: black;
+  color: black;
+  width: 100%;
+  height: 120px;
+  font-weight: 500;
+}
+
+.row span {
+  color: red;
+}
+.row h2 {
+  font-size: 50px;
+  color: white;
+  line-height: 90%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  align-content: center;
+  align-items: center;
+}
+
+.row .col i {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+  .headingContent h2 {
+    width: 100%;
+    line-height: 150%;
+    text-align: left;
+  }
+  .headingContent {
+    padding: 10px 16%;
+  }
+
+  footer {
+    height: 100%;
+  }
+
+  .headingContent {
+    width: 100%;
+  }
+  .headingContent h1 {
+    font-size: 50px;
+  }
+  header {
+    height: 100%;
+    width: 100%;
+  }
+  .hero .product {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+    padding: 2px 3%;
+  }
+  h1.headingContent {
+    width: 100%;
+    height: fit-content;
+    font-size: 90px;
+  }
+
+  nav .brandLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .brandLogo p {
+    font-size: 30px;
+  }
+
+  .navLink {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10%;
+    margin-bottom: 10px;
+    /* justify-content: center; */
+  }
+  .icons .bx {
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+  }
+}
