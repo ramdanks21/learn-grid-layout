@@ -27,7 +27,7 @@ img {
 }
 
 main {
-  max-width: 1200%;
+  max-width: 100%;
   /* margin: 60px auto; */
 
   display: grid;
