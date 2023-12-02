@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  /* border: 1px solid rgba(88, 88, 88, 0.151); */
+}
+
+a {
+  color: #777777;
+}
+
+header {
+  /* background: red; */
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  margin: 0 0 20px 0;
+  padding: 0 5%;
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+span {
+  color: green;
+}
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #777777;
+  font-size: 14px;
+}
+.link-righ a {
+  font-size: 14px;
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+.link-righ > li > a {
+  margin-left: 20px;
+  display: inline-block;
+}
+.btn-freequote {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+main {
+  margin: 20px 0;
+  /* background: green; */
+  width: 100%;
+  height: 100%;
+}
+.content-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 200px;
+  padding: 20px 0;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.content-heading {
+  max-width: 700px;
+  width: 100%;
+}
+.content-heading h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.content-text {
+  height: 100px;
+  max-width: 500px;
+}
+.conten-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #777777;
+}
+.btn-more {
+  margin-top: 25px;
+  padding: 15px 20px;
+  font-size: 16px;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px #e2e2e2, -1px -1px 1px #e2e2e2;
+  border-radius: 8px;
+}
+
+.banner-img {
+  /* margin-left: 0; */
+  padding: 10px;
+  /* margin-top: 10px; */
+  height: 335px;
+  max-height: 335px;
+
+  background-position: center;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-visitor {
+  background-color: #00000060;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-visitor .column {
+  color: white;
+  line-height: 1.5;
+}
+
+.container-visitor .column h2 {
+  font-size: 36px;
+}
+.containter-gallery {
+  width: 100%;
+}
+.containter-gallery .imagess h1 {
+  border-bottom: 2px solid green;
+  display: inline-block;
+  width: fit-content;
+  margin: 20px 0;
+}
+.imagess {
+  text-align: center;
+}
+
+.grid-gallery {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+}
+
+.grid-item {
+  /* position: relative; */
+  background-color: #efefef;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.grid-item img:hover {
+  transform: scale(1.1);
+}
+
+.grid-gallery .grid-item:nth-child(3n-2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* responseive */
+
+@media screen and (max-width: 767px) {
+  .content-heading {
+    width: 100%;
+  }
+  .content-heading h1 {
+    font-size: 20px;
+  }
+  .content-heading p {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    display: block;
+  }
+  .content-container {
+    display: block;
+  }
+  .banner-img {
+    display: block;
+  }
+  .btn-more {
+    font-size: 14px;
+    padding: 5px;
+    width: fit-content;
+    margin-top: 9px;
+  }
+  .container-visitor {
+    height: 100%;
+    flex-direction: column;
+  }
+  .link-righ li {
+    margin: 20px 0;
+  }
+
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    grid-auto-rows: 250px;
+  }
+
+  .grid-gallery .grid-item:nth-child(3n-2) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

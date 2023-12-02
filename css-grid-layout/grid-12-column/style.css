@@ -13,6 +13,7 @@ header {
   padding: 20px 40px;
   background: #fff;
   align-items: center;
+  background: red;
 }
 
 header h1 {
@@ -32,6 +33,7 @@ header nav a {
 main {
   max-width: 1200px;
   margin: 60px auto;
+  background: blue;
   padding: 20px;
 }
 main img {
@@ -53,7 +55,7 @@ main > h2 {
   padding-top: 20px;
 }
 main .card {
-  grid-column: span 4;
+  grid-column: span 3;
   background: #fff;
   padding: 10px 20px;
   border-radius: 6px;

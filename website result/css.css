@@ -37,9 +37,6 @@ nav ul {
   gap: 20px;
   display: flex;
 }
-/* nav ul li {
-  display: inline-block;
-} */
 
 nav ul li a {
   color: rgb(121, 118, 118);
